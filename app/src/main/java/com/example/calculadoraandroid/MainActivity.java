@@ -356,6 +356,7 @@ public class MainActivity extends AppCompatActivity {
             AsignarOperacióTrigonometrica("Sin");
         }
     }
+
     public void clickTan(View v){
         textTrigonometria.setText("tan(");
         textOperacions.setText("0");
