@@ -171,6 +171,7 @@
         android:id="@+id/buttoncos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="clickCos"
         android:text="@string/cos"
         app:layout_constraintStart_toStartOf="@+id/buttonmultiply"
         app:layout_constraintTop_toTopOf="@+id/buttonsin" />

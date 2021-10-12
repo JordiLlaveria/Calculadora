@@ -35,108 +35,138 @@ public class MainActivity extends AppCompatActivity {
     }
     public void RealitzarOperació(double numero1) {
         if (operacio == "Suma") {
-            if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
+            if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal + Math.sin(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal + Math.sin(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal + Math.cos(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal + Math.cos(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal + Math.tan(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal + Math.tan(numero1);
+                this.operaciotrigonometrica=null;
             }
             else {
                 this.resultattotal = this.resultattotal + numero1;
             }
         } else if (operacio == "Resta") {
-            if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
+            if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal - Math.sin(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal - Math.sin(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal - Math.cos(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal - Math.cos(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal - Math.tan(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal - Math.tan(numero1);
+                this.operaciotrigonometrica=null;
             }
             else {
                 this.resultattotal = this.resultattotal - numero1;
             }
         } else if (operacio == "Multiplicació") {
-            if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
+            if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal * Math.sin(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal * Math.sin(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal * Math.cos(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal * Math.cos(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal * Math.tan(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal * Math.tan(numero1);
+                this.operaciotrigonometrica=null;
             }
             else {
                 this.resultattotal = this.resultattotal * numero1;
             }
         } else if (operacio == "Divisió") {
-            if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
+            if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal / Math.sin(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Sin"){
                 this.resultattotal = this.resultattotal / Math.sin(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal / Math.cos(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Cos"){
                 this.resultattotal = this.resultattotal / Math.cos(numero1);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Degree")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal / Math.tan(numero1 * Math.PI/180);
+                this.operaciotrigonometrica=null;
             }
-            else if (textOperacions.getText().equals(null)==false && textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
+            else if (textFormat.getText().equals("Radians")==true && operaciotrigonometrica=="Tan"){
                 this.resultattotal = this.resultattotal / Math.tan(numero1);
+                this.operaciotrigonometrica=null;
             }
             else {
                 this.resultattotal = this.resultattotal / numero1;
             }
         } else if (operacio == "Sin" && textFormat.getText().equals("Degree")==true) {
             numero1 = numero1 * Math.PI/180;
+            this.operaciotrigonometrica=null;
             this.resultattotal = Math.sin(numero1);
         } else if (operacio == "Cos" && textFormat.getText().equals("Degree")==true) {
             numero1 = numero1 * Math.PI/180;
+            this.operaciotrigonometrica=null;
             this.resultattotal = Math.cos(numero1);
         } else if (operacio == "Tan" && textFormat.getText().equals("Degree")==true) {
             numero1 = numero1 * Math.PI/180;
+            this.operaciotrigonometrica=null;
             this.resultattotal = Math.tan(numero1);
         } else if (operacio == "Sin" && textFormat.getText().equals("Radians")==true) {
             this.resultattotal = Math.sin(numero1);
+            this.operaciotrigonometrica=null;
         } else if (operacio == "Cos" && textFormat.getText().equals("Radians")==true) {
             this.resultattotal = Math.cos(numero1);
+            this.operaciotrigonometrica=null;
         } else if (operacio == "Tan" && textFormat.getText().equals("Radians")==true) {
             this.resultattotal = Math.tan(numero1);
+            this.operaciotrigonometrica=null;
         }
         textOperacions.setText(Double.toString(this.resultattotal));
         this.operacio = null;
@@ -329,6 +359,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickClear(View v){
         textOperacions.setText("0");
         this.resultattotal=0;
+        textTrigonometria.setText("");
     }
     public void changeDegree(View v) {
         textFormat.setText("Degree");
@@ -356,7 +387,6 @@ public class MainActivity extends AppCompatActivity {
             AsignarOperacióTrigonometrica("Sin");
         }
     }
-
     public void clickTan(View v){
         textTrigonometria.setText("tan(");
         textOperacions.setText("0");
