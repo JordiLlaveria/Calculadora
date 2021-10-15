@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -172,7 +173,21 @@ public class MainActivity extends AppCompatActivity {
         this.operacio = null;
         this.operacioabans = false;
     }
-
+    public void clickNumero(View v){
+        Button bt = (Button)v;
+        String numero = (String) bt.getText();
+        if (operacioabans==true) {
+            textOperacions.setText(null);
+            this.operacioabans=false;
+        }
+        if (textOperacions.getText().equals("0") == true){
+            textOperacions.setText(numero);
+        }
+        else{
+            textOperacions.setText(textOperacions.getText() + numero);
+        }
+    }
+    /*
     public void click1(View v) {
         if (operacioabans==true) {
             textOperacions.setText(null);
@@ -184,17 +199,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             textOperacions.setText(textOperacions.getText() + "1");
         }
-        /*
-        if (operacio != null) {
-            textOperacions.setText("1");
-            RealitzarOperació(this.resultattotal, 1);
-            this.operacio=null;
-        }
-        else{
-            textOperacions.setText("1");
-            this.resultattotal = 1;
-        }
-        */
     }
 
     public void click2(View v) {
@@ -209,12 +213,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             textOperacions.setText(textOperacions.getText() + "2");
         }
-        /*
-        else{
-            textOperacions.setText("2");
-            this.resultattotal = 2;
-        }
-        */
     }
 
     public void click3(View v) {
@@ -313,6 +311,29 @@ public class MainActivity extends AppCompatActivity {
             textOperacions.setText(textOperacions.getText() + "0");
         }
     }
+    */
+    public void clickOperacio(View v){
+        if (this.operacio == null) {
+            Button bt = (Button)v;
+            if (bt.getText().equals("+") == true) {
+                AsignarOperació("Suma");
+            }
+            else if (bt.getText().equals("-") == true){
+                AsignarOperació("Resta");
+            }
+            else if (bt.getText().equals("*") == true){
+                AsignarOperació("Multiplicació");
+            }
+            else if (bt.getText().equals("/") == true){
+                AsignarOperació("Divisió");
+            }
+        }
+        else {
+            RealitzarOperació(Double.parseDouble(String.valueOf(textOperacions.getText())));
+        }
+        textTrigonometria.setText("");
+    }
+    /*
     public void clickSuma(View v){
         if (this.operacio == null) {
             AsignarOperació("Suma");
@@ -349,6 +370,7 @@ public class MainActivity extends AppCompatActivity {
         }
         textTrigonometria.setText("");
     }
+    */
     public void clickEqual(View v){
         RealitzarOperació(Double.parseDouble(String.valueOf(textOperacions.getText())));
         textOperacions.setText(Double.toString(this.resultattotal));
